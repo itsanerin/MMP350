@@ -1,0 +1,23 @@
+@media (max-width: 400px){
+    #container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "menu"
+            "post"
+            "main"
+            "login"
+            "footer"
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+    #container{
+        width: 100%;
+        grid-template-areas:
+            "header header post"
+            "main main main"
+            "footer login menu"
+    }
+}
