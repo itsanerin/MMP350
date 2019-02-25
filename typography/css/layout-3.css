@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    grid-column-gap: 20px;
+    grid-row-gap: 1em;
+}
+
+#title {
+    grid-column: 1 / span 3;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 200;
+    color: dodgerblue;
+    font-size: 2em;
+    text-align: center;
+    height: 120px;
+}
+
+#login {
+    grid-column: 3 / span 1;
+    grid-row: 4;
+}
+
+#sign-up {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+}
+
+#menu {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#menu-list {
+    list-style-type: none;
+    list-style: none;
+}
+
+#menu-list li {
+    display: inline-block;
+}
+
+#menu-list a {
+    text-decoration: none;
+    border-right: 3px double #f28933;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+}
+
+#menu-list a:hover {
+    text-decoration: underline;
+}
+
+#post {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+    font-family: 'Junge', serif;
+}
+
+#posts {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    font-family: 'Play', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-top: 30px;
+    padding-right: 40px;
+}
+
+.post-info {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+.post {
+    border-bottom: 3px double #f28933;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+#submit-post {
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+    background-color: #f28933;
+    border: 0;
+    outline: 0;
+    padding: 0.25em 0;
+    border-radius: 15px;
+}
+
+#submit-post:hover {
+    text-decoration: underline;
+}
+
+#write-post {
+    font-family: 'Play', sans-serif;
+    height: 30%;
+    width: 100%;
+    margin-top: 25%;
+    font-size: 18px;
+}
+
+#login-username,
+#login-password,
+#sign-up-username,
+#sign-up-email,
+#sign-up-password {
+    font-family: 'Orbitron', sans-serif;
+}
